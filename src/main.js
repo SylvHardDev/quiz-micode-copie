@@ -2,4 +2,10 @@ import "./style.css";
 
 const app = document.querySelector("#app");
 
-app.style.backgroundColor = "red";
+const colors = ["red", "green", "blue"];
+
+let i = 0;
+
+setInterval(() => {
+  app.computedStyleMap.backgroundColor = colors[i];
+});
