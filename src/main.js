@@ -1,11 +1,8 @@
 import "./style.css";
+import { Questions } from "./questions";
 
 const app = document.querySelector("#app");
 
-const colors = ["red", "green", "blue"];
+const startButton = document.querySelector("#start");
 
-let i = 0;
-
-setInterval(() => {
-  app.computedStyleMap.backgroundColor = colors[i];
-});
+startButton.addEventListener("click", startQuiz);
